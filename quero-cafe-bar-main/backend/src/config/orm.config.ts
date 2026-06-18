@@ -14,7 +14,7 @@ const config: DataSourceOptions = {
   database: process.env.DB_DATABASE,
   entities: [join(__dirname, '..', '**/*.entity{.ts,.js}')], // Path to your entity files
   migrations: [join(__dirname, '..', 'database/migrations/**/*{.ts,.js}')], // Path to your migration files
-  synchronize: false, // Set to false in production to prevent data loss
+  synchronize: true, // Set to false in production to prevent data loss
   logging: true,
 };
 
